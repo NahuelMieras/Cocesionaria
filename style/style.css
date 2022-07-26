@@ -97,10 +97,8 @@ a{
 
 .menu-bar a{
     color: var(--primary-color);
-    padding-left: 1fr;
-    font-size: 15px;
-    font-weight: border ;
-    line-height: 30px;
+    margin-left: 1fr;
+    padding: 10px;
 }
 
 section, main{
@@ -177,11 +175,32 @@ section, main{
     
     .menu-bar li{
         padding: 0 15px;
+        margin: 10px 0;
     }
     
     .menu-bar a{
         font-size: 19px;
         line-height: 50px;
+    }
+
+    .menu-bar a:hover{
+        background-color: var(--red-color);
+        border-radius: 15px;
+    }
+
+    .subtitle:hover{
+        cursor: pointer;
+        color: rgb(192, 0, 0);
+    }
+
+    .img-pub{
+        transition: 0.5s;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .img-pub:hover{
+        transform: scale(1.5);
     }
     
     .footer-icons{
@@ -191,6 +210,6 @@ section, main{
         padding-right: 2em;
     }
     .footer-icons img:hover{
-        
+        cursor: pointer;
     }
 }
