@@ -8,7 +8,7 @@
     --primary-color: white;
     --text-color: black;
     --red-color: rgb(143, 0, 0);  
-    --nav-color:rgba(0, 0, 0, 0.661);
+    --nav-color:rgba(0, 0, 0, 0.832);
     --footer-color: rgba(82, 82, 82, 0.945);  
 }
 
@@ -60,9 +60,6 @@ body{
 a{
     text-decoration: none;
 }
-/*.logo-header{
-    display: none 
-}*/
 
 .logo-header{
     margin: 1em;
@@ -132,6 +129,10 @@ section, main{
     padding-bottom: 1em;
 }
 
+.sectionContactos{
+    justify-content: center;
+}
+
 .footer{
     margin-top: 3em ;
     padding: 2em;
@@ -152,11 +153,12 @@ section, main{
     height: 2em;
 }
 
-
 @media (min-width: 480px) {
     
-    div .logo-header img{
-       
+    .formContact{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .logo-header img{
         height: 50px;
