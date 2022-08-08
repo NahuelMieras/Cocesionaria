@@ -52,7 +52,7 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--nav-color);
     box-shadow: 0 4px 5px var(--footer-color);
 }
@@ -164,17 +164,9 @@ section, main{
         height: 50px;
     }
     .search{
-    
+        display: block;
     }
-    
-    .search-icon{
-    
-    }
-    
-    .menu-bar{
 
-    }
-    
     .menu-bar li{
         padding: 0 15px;
         margin: 10px 0;
@@ -194,7 +186,7 @@ section, main{
         cursor: pointer;
         color: rgb(192, 0, 0);
     }
-
+    
     .img-pub{
         transition: 0.5s;
         object-fit: cover;
