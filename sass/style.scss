@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Quicksand&family=Red+Hat+Display:wght@300&display=swap');
+@import "fuentes";
 *{
     padding: 0;
     margin: 0; 
@@ -102,7 +102,7 @@ section, main{
     margin: 1em 2em;
 }
 
-.subtitle, .section-venta h2{
+.subtitle-venta, .subtitle-compra, .section-venta h2{
     margin-bottom: 1em;
 }
 
@@ -129,6 +129,19 @@ section, main{
     padding-bottom: 1em;
 }
 
+.section-venta h2 .cards{
+     display: flex;
+}
+
+.card{
+    width: 300px;
+    margin: 25px;
+    padding: 40px 20px;
+    background: linear-gradient(rgb(185, 0, 0), rgb(6, 0, 0));
+    border-radius:  15px;
+    box-shadow: 0 10px 15px rgb(22, 22, 22);
+}
+
 .sectionContactos{
     justify-content: center;
 }
@@ -139,8 +152,6 @@ section, main{
     background-color: var(--footer-color);
     color: var(--primary-color);
     border-top: 2px inset black
- 
-
 }
 
 .footer-icons{
@@ -182,7 +193,7 @@ section, main{
         border-radius: 15px;
     }
 
-    .subtitle:hover{
+    .subtitle-venta, .subtitle-compra:hover{
         cursor: pointer;
         color: rgb(192, 0, 0);
     }
@@ -206,4 +217,5 @@ section, main{
     .footer-icons img:hover{
         cursor: pointer;
     }
+    
 }
