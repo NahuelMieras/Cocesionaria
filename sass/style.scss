@@ -1,24 +1,5 @@
 @import "fuentes";
-*{
-    padding: 0;
-    margin: 0; 
-}
-
-:root{
-    --primary-color: white;
-    --text-color: black;
-    --red-color: rgb(143, 0, 0);  
-    --nav-color:rgba(0, 0, 0, 0.832);
-    --footer-color: rgba(82, 82, 82, 0.945);  
-}
-
-body{
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    text-align: center;
-    min-height: 100%;
-}
+@import "generales";
 
 .header{
     grid-area: header;
@@ -86,6 +67,7 @@ a{
     list-style-type: none;
     align-items: center;
     height: 100%;
+    inline-size: max-content;
 }
 
 .menu-bar li{
@@ -102,8 +84,8 @@ section, main{
     margin: 1em 2em;
 }
 
-.subtitle-venta, .subtitle-compra, .section-venta h2{
-    margin-bottom: 1em;
+.subtitle-venta, .subtitle-compra{
+    margin-bottom: 2em;
 }
 
 .pub{
@@ -127,19 +109,56 @@ section, main{
 .parrafo-pub{
     text-align: start;
     padding-bottom: 1em;
+    color: rgb(41, 41, 41);
 }
 
-.section-venta h2 .cards{
-     display: flex;
+.cards{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
 }
 
 .card{
     width: 300px;
     margin: 25px;
     padding: 40px 20px;
-    background: linear-gradient(rgb(185, 0, 0), rgb(6, 0, 0));
+    background: var(--cards-background);
     border-radius:  15px;
     box-shadow: 0 10px 15px rgb(22, 22, 22);
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.card-title{
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.card-subtitle{
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.card-parrafo{
+    color: var(---text-color);
+    text-align: justify;
+}
+
+.card-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--red-color);
+    border-radius: 40px;
+    box-shadow: 0 10px 15px rgba(2, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .sectionContactos{
@@ -193,7 +212,7 @@ section, main{
         border-radius: 15px;
     }
 
-    .subtitle-venta, .subtitle-compra:hover{
+    .subtitle-venta:hover, .subtitle-compra:hover{
         cursor: pointer;
         color: rgb(192, 0, 0);
     }
@@ -206,6 +225,30 @@ section, main{
 
     .img-pub:hover{
         transform: scale(1.5);
+    }
+
+    .cards{
+        display: flex;
+    }
+    
+    .card{
+        width: 300px;
+        margin: 25px;
+        padding: 40px 20px;
+    }
+    
+    .card-title{
+        margin-bottom: 15px;
+    }
+    
+    .card-subtitle{
+        margin-bottom: 10px;
+    }
+    
+    .card-btn{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
     }
     
     .footer-icons{
