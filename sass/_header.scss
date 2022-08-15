@@ -1,0 +1,43 @@
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-color);
+    box-shadow: 0 4px 5px var(--footer-color);
+
+    .logo-header{
+        margin: 1em;
+
+         img{
+            height: 20px;
+        }    
+    }
+    .search{
+        display: none;
+        align-self: center;
+
+        input{
+            border-radius: 0.25em;
+        }
+        img{
+            height: 1.5em;
+        }
+    }
+    .menu-bar{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        height: 100%;
+        inline-size: max-content;
+
+        li{
+            text-transform: uppercase;
+        }
+        a{
+            color: var(--primary-color);
+            margin-left: 1fr;
+            padding: 10px;
+        }
+        
+    }
+    
+}

@@ -1,186 +1,15 @@
 @import "fuentes";
 @import "generales";
-
-.header{
-    grid-area: header;
-}
-
-.main{
-    grid-area: main;
-}
-
-.section-compra{
-    grid-area: section-compra;
-}
-
-.section-venta{
-    grid-area: section-venta;
-}
-
-.footer{
-    grid-area: footer;
-}
+@import "header";
+@import "sectionCompra";
+@import "sectionVenta";
 
 .grid-container{
     display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "section-compra"
-    "section-venta"
-    "footer";
-}
-
-.header{
-    display: flex;
-    justify-content: center;
-    background-color: var(--nav-color);
-    box-shadow: 0 4px 5px var(--footer-color);
-}
-
-a{
-    text-decoration: none;
-}
-
-.logo-header{
-    margin: 1em;
-}
-
-.logo-header img{
-    height: 20px;
-}
-
-.search{
-    display: none;
-    align-self: center;
-}
-
-.search input{
-    border-radius: 0.25em;
-}
-.search img{
-    height: 1.5em;
-}
-
-.menu-bar{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    height: 100%;
-    inline-size: max-content;
-}
-
-.menu-bar li{
-    text-transform: uppercase;
-}
-
-.menu-bar a{
-    color: var(--primary-color);
-    margin-left: 1fr;
-    padding: 10px;
-}
-
-section, main{
-    margin: 1em 2em;
-}
-
-.subtitle-venta, .subtitle-compra{
-    margin-bottom: 2em;
-}
-
-.pub{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    margin-bottom: 2em;
-    padding-bottom: 1em;
-    align-items: center;
-    border-bottom: 1px solid rgb(199, 199, 199);
-}
-
-.img-pub{
-    margin-right: 1em;
-}
-
-.parrafo-grid{
-    display: grid;
-    grid-template-rows: 70% 30%;
-}
-
-.parrafo-pub{
-    text-align: start;
-    padding-bottom: 1em;
-    color: rgb(41, 41, 41);
-}
-
-.cards{
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-}
-
-.card{
-    width: 300px;
-    margin: 25px;
-    padding: 40px 20px;
-    background: var(--cards-background);
-    border-radius:  15px;
-    box-shadow: 0 10px 15px rgb(22, 22, 22);
-    text-align: center;
-    transition: all 0.5s ease;
-}
-
-.card-title{
-    color: var(--text-color);
-    margin-bottom: 15px;
-    font-weight: bolder;
-}
-
-.card-subtitle{
-    margin-bottom: 10px;
-    color: var(--text-color);
-}
-
-.card-parrafo{
-    color: var(---text-color);
-    text-align: justify;
-}
-
-.card-btn{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: var(--red-color);
-    border-radius: 40px;
-    box-shadow: 0 10px 15px rgba(2, 0, 0, 0.3);
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-.card:hover{
-    transform: scale(1.05);
 }
 
 .sectionContactos{
     justify-content: center;
-}
-
-.footer{
-    margin-top: 3em ;
-    padding: 2em;
-    background-color: var(--footer-color);
-    color: var(--primary-color);
-    border-top: 2px inset black
-}
-
-.footer-icons{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2em;
-}
-
-.footer-icons img{
-    height: 2em;
 }
 
 @media (min-width: 480px) {
@@ -190,9 +19,13 @@ section, main{
         margin-left: auto;
         margin-right: auto;
     }
-    .logo-header img{
+    .logo-header{
+        align-self: center;
+            .logo-header img{
         height: 50px;
     }
+    }
+
     .search{
         display: block;
     }
@@ -221,44 +54,51 @@ section, main{
         transition: 0.5s;
         object-fit: cover;
         cursor: pointer;
+        :hover{
+            transform: scale(1.5);
+        }
     }
 
-    .img-pub:hover{
-        transform: scale(1.5);
+    .section-venta {
+
+        .cards{
+            display: flex;
+
+            .card{
+                width: 300px;
+                margin: 25px;
+                padding: 40px 20px;
+
+                .card-title{
+                    margin-bottom: 15px;
+                }
+                
+                .card-subtitle{
+                    margin-bottom: 10px;
+                }
+                
+                .card-btn{
+                    display: inline-block;
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+        
     }
 
-    .cards{
-        display: flex;
-    }
-    
-    .card{
-        width: 300px;
-        margin: 25px;
-        padding: 40px 20px;
-    }
-    
-    .card-title{
-        margin-bottom: 15px;
-    }
-    
-    .card-subtitle{
-        margin-bottom: 10px;
-    }
-    
-    .card-btn{
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-    }
-    
     .footer-icons{
         justify-content: end;
+        
+        img{
+            padding-right: 2em;
+
+        }
+        :hover{
+            cursor: pointer;
+        }
     }
-    .footer-icons img{
-        padding-right: 2em;
-    }
-    .footer-icons img:hover{
-        cursor: pointer;
-    }
+
+
     
 }

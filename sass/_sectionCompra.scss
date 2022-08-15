@@ -1,0 +1,27 @@
+.section-compra{
+    .subtitle-compra{
+        margin-bottom: 2em;
+    }
+    .pub{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        align-items: center;
+        border-bottom: 1px solid rgb(199, 199, 199);
+
+        .img-pub{
+            margin-right: 1em;
+        }
+        .parrafo-grid{
+            display: grid;
+            grid-template-rows: 70% 30%;
+
+            .parrafo-pub{
+                text-align: start;
+                padding-bottom: 1em;
+                color: rgb(41, 41, 41);
+            }
+        }
+    } 
+}
