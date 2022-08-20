@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Quicksand&family=Red+Hat+Display:wght@300&display=swap");
 * {
   padding: 0;
@@ -8,7 +9,7 @@
   --primary-color: white;
   --text-color: black;
   --red-color: rgb(143, 0, 0);
-  --nav-color:rgba(0, 0, 0, 0.832);
+  --nav-color: rgba(0, 0, 0, 0.832);
   --footer-color: rgba(82, 82, 82, 0.945);
   --cards-background: linear-gradient(rgb(241, 241, 241), rgb(209, 204, 204));
 }
@@ -42,9 +43,73 @@ body .footer .footer-icons img {
   height: 2em;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "section-compra" "section-venta" "footer";
+}
+
+aside {
+  display: none;
+}
+
+.sectionContactos {
+  justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .formContact {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .logo-header {
+    align-self: center;
+  }
+  header .logo-header .logo-header img {
+    height: 40px;
+  }
+  header .search {
+    display: block;
+  }
+  header .menu-bar li {
+    padding: 0 15px;
+    margin: 10px 0;
+  }
+  header .menu-bar a {
+    font-size: 19px;
+    line-height: 50px;
+  }
+  header .menu-bar a:hover {
+    background-color: var(--red-color);
+    border-radius: 15px;
+  }
+  .subtitle-venta:hover,
+.subtitle-compra:hover {
+    cursor: pointer;
+    color: rgb(192, 0, 0);
+  }
+  .img-pub {
+    transition: 0.5s;
+    -o-object-fit: cover;
+       object-fit: cover;
+    cursor: pointer;
+  }
+  .img-pub :hover {
+    transform: scale(1.5);
+  }
+  .footer-icons {
+    justify-content: end;
+  }
+  .footer-icons img {
+    padding-right: 2em;
+  }
+  .footer-icons :hover {
+    cursor: pointer;
+  }
+}
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: var(--nav-color);
   box-shadow: 0 4px 5px var(--footer-color);
 }
@@ -52,7 +117,7 @@ body .footer .footer-icons img {
   margin: 1em;
 }
 .header .logo-header img {
-  height: 20px;
+  height: 40px;
 }
 .header .search {
   display: none;
@@ -88,8 +153,8 @@ body .footer .footer-icons img {
 .section-compra .pub {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin-bottom: 2em;
-  padding-bottom: 1em;
+  margin-bottom: 3em;
+  padding-bottom: 3em;
   align-items: center;
   border-bottom: 1px solid rgb(199, 199, 199);
 }
@@ -152,59 +217,12 @@ body .footer .footer-icons img {
   transform: scale(1.05);
 }
 
-.grid-container {
-  display: grid;
-}
-
-.sectionContactos {
-  justify-content: center;
-}
-
 @media (min-width: 480px) {
-  .formContact {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .logo-header {
-    align-self: center;
-  }
-  .logo-header .logo-header img {
-    height: 50px;
-  }
-  .search {
-    display: block;
-  }
-  .menu-bar li {
-    padding: 0 15px;
-    margin: 10px 0;
-  }
-  .menu-bar a {
-    font-size: 19px;
-    line-height: 50px;
-  }
-  .menu-bar a:hover {
-    background-color: var(--red-color);
-    border-radius: 15px;
-  }
-  .subtitle-venta:hover, .subtitle-compra:hover {
-    cursor: pointer;
-    color: rgb(192, 0, 0);
-  }
-  .img-pub {
-    transition: 0.5s;
-    -o-object-fit: cover;
-       object-fit: cover;
-    cursor: pointer;
-  }
-  .img-pub :hover {
-    transform: scale(1.5);
-  }
   .section-venta .cards {
     display: flex;
   }
   .section-venta .cards .card {
-    width: 300px;
+    max-width: 300px;
     margin: 25px;
     padding: 40px 20px;
   }
@@ -219,13 +237,64 @@ body .footer .footer-icons img {
     margin-top: 20px;
     padding: 10px 20px;
   }
-  .footer-icons {
-    justify-content: end;
+}
+@media (min-width: 480px) {
+  aside {
+    display: block;
   }
-  .footer-icons img {
-    padding-right: 2em;
+  .wrapper-compra {
+    max-width: 1500px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "aside  section-compra section-compra section-compra";
   }
-  .footer-icons :hover {
-    cursor: pointer;
+  aside {
+    grid-area: aside;
+  }
+  .section-compra {
+    grid-area: section-compra;
+  }
+  aside {
+    margin: 1em;
+    margin-right: 5em;
+    padding-top: 1em;
+  }
+  aside .wrapper-filter {
+    margin-top: 3em;
+    min-width: 200px;
+    max-width: 300px;
+  }
+  aside .wrapper-filter .wrapper-marca,
+aside .wrapper-filter .wrapper-año,
+aside .wrapper-filter .wrapper-combustible {
+    margin: 3em 0.5em;
+    padding: 1em;
+    border-top: solid rgb(161, 2, 2);
+    border-radius: 2px;
+    box-shadow: 0 3px 5px rgb(100, 100, 100);
+  }
+  aside .wrapper-filter .wrapper-marca .checkbox-wrapper-title,
+aside .wrapper-filter .wrapper-año .checkbox-wrapper-title,
+aside .wrapper-filter .wrapper-combustible .checkbox-wrapper-title {
+    margin-bottom: 0.5em;
+    font-size: large;
+  }
+  aside .wrapper-filter .wrapper-marca form,
+aside .wrapper-filter .wrapper-año form,
+aside .wrapper-filter .wrapper-combustible form {
+    text-align: justify;
+    line-height: 1.7em;
+  }
+  aside .wrapper-filter .wrapper-marca form input,
+aside .wrapper-filter .wrapper-año form input,
+aside .wrapper-filter .wrapper-combustible form input {
+    margin-right: 0.5em;
+    border: solid aqua;
+  }
+  aside .wrapper-filter .wrapper-marca form input:checked,
+aside .wrapper-filter .wrapper-año form input:checked,
+aside .wrapper-filter .wrapper-combustible form input:checked {
+    background: sandybrown;
   }
 }/*# sourceMappingURL=style.css.map */

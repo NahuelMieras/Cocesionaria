@@ -1,0 +1,65 @@
+
+
+@media (min-width: 480px) {
+    aside{
+        display: block;
+    }
+
+    .wrapper-compra {
+        max-width: 1500px;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "aside  section-compra section-compra section-compra";
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    .section-compra {
+        grid-area: section-compra;
+    }
+
+    aside {
+        margin: 1em;
+        margin-right: 5em;
+        padding-top: 1em;
+
+
+        .wrapper-filter {
+            margin-top: 3em;
+            min-width: 200px;
+            max-width: 300px;
+
+            .wrapper-marca,
+            .wrapper-año,
+            .wrapper-combustible {
+                margin: 3em 0.5em;
+                padding: 1em;
+                border-top: solid rgb(161, 2, 2);
+                border-radius: 2px;
+                box-shadow: 0 3px 5px rgb(100, 100, 100);
+
+                .checkbox-wrapper-title {
+                    margin-bottom: 0.5em;
+                    font-size: large;
+                }
+
+                form {
+                    text-align: justify;
+                    line-height: 1.7em;
+                    input{
+                        margin-right: 0.5em;
+                        border: solid  aqua;
+                    }
+                    input:checked{
+                        background: sandybrown;
+                    }
+                }
+            }
+
+        }
+    }
+}

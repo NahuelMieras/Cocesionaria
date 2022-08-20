@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: var(--nav-color);
     box-shadow: 0 4px 5px var(--footer-color);
 
@@ -8,7 +8,7 @@
         margin: 1em;
 
          img{
-            height: 20px;
+            height: 40px;
         }    
     }
     .search{
