@@ -1,5 +1,6 @@
-
-
+aside {
+    display: none;
+  }
 @media (min-width: 480px) {
     aside{
         display: block;
@@ -11,7 +12,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
-            "aside  section-compra section-compra section-compra";
+        "aside  section-compra section-compra section-compra";
     }
 
     aside {
@@ -52,10 +53,6 @@
                     line-height: 1.7em;
                     input{
                         margin-right: 0.5em;
-                        border: solid  aqua;
-                    }
-                    input:checked{
-                        background: sandybrown;
                     }
                 }
             }

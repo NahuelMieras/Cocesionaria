@@ -48,10 +48,6 @@ body .footer .footer-icons img {
   grid-template-areas: "header" "main" "section-compra" "section-venta" "footer";
 }
 
-aside {
-  display: none;
-}
-
 .sectionContactos {
   justify-content: center;
 }
@@ -238,6 +234,10 @@ aside {
     padding: 10px 20px;
   }
 }
+aside {
+  display: none;
+}
+
 @media (min-width: 480px) {
   aside {
     display: block;
@@ -290,11 +290,75 @@ aside .wrapper-filter .wrapper-combustible form {
 aside .wrapper-filter .wrapper-año form input,
 aside .wrapper-filter .wrapper-combustible form input {
     margin-right: 0.5em;
-    border: solid aqua;
   }
-  aside .wrapper-filter .wrapper-marca form input:checked,
-aside .wrapper-filter .wrapper-año form input:checked,
-aside .wrapper-filter .wrapper-combustible form input:checked {
-    background: sandybrown;
-  }
+}
+.wrapper-login {
+  margin: 30px 0 50px;
+  justify-content: center;
+}
+.wrapper-login .login {
+  justify-content: center;
+  width: 500px;
+  margin: 15px auto 0;
+}
+.wrapper-login .login .login--loginWith {
+  padding: 30px 0;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+.wrapper-login .login .login--loginWith .login--loginWith--google, .wrapper-login .login .login--loginWith .login--loginWith--facebook {
+  display: flex;
+  background: white;
+  margin: 1em;
+  padding: 0.5em;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.wrapper-login .login .login--loginWith .login--loginWith--google .btn--google, .wrapper-login .login .login--loginWith .login--loginWith--facebook .btn--google, .wrapper-login .login .login--loginWith .login--loginWith--facebook .btn--facebook {
+  margin: 0;
+  width: 70%;
+}
+.wrapper-login .login .login--loginWith .login--loginWith--facebook {
+  background-color: #3b5998;
+  color: var(--primary-color);
+}
+.wrapper-login .login .mb-2 {
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.wrapper-login .login .mb-2 .col-sm-3 {
+  width: 70%;
+}
+.wrapper-login .login .btn--iniciarSesion {
+  padding: 15px 0;
+}
+.wrapper-login .login .btn--iniciarSesion .btn {
+  width: 460px;
+  margin: 1em;
+  padding: 0.5em;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: var(--red-color);
+  border: 0.3px solid black;
+  border-radius: 10px;
+}
+.wrapper-login .login .forgotenPassword {
+  margin-bottom: 15px;
+}
+.wrapper-login .login .forgotenPassword a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+.wrapper-login .login .registerWrap {
+  padding-top: 15px;
+  border-top: 1px solid rgb(194, 194, 194);
+  font-size: large;
+}
+.wrapper-login .login .registerWrap .register--link {
+  text-decoration: none;
+  color: var(--red-color);
 }/*# sourceMappingURL=style.css.map */
