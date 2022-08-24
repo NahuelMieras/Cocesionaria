@@ -21,10 +21,34 @@ body {
   text-align: center;
   min-height: 100%;
 }
+body main {
+  background: url(../publicaciones/imagen\ de\ portada.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 350px;
+}
+body main .container-main .title-main {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+}
+body main::before {
+  content: "";
+  width: 100%;
+  min-height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  opacity: 0.4;
+}
 body a {
   text-decoration: none;
 }
-body section, body main {
+body section {
   margin: 1em 2em;
 }
 body .footer {
@@ -46,10 +70,6 @@ body .footer .footer-icons img {
 .grid-container {
   display: grid;
   grid-template-areas: "header" "main" "section-compra" "section-venta" "footer";
-}
-
-.sectionContactos {
-  justify-content: center;
 }
 
 @media (min-width: 480px) {
@@ -361,4 +381,24 @@ aside .wrapper-filter .wrapper-combustible form input {
 .wrapper-login .login .registerWrap .register--link {
   text-decoration: none;
   color: var(--red-color);
+}
+
+.sectionContact {
+  justify-content: center;
+  margin: 30px;
+  padding: 40px 90px 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 18px rgb(146, 146, 146);
+}
+
+@media (min-width: 480px) {
+  .sectionContact {
+    max-width: 1200px;
+    margin: 100px 50px;
+  }
+  .sectionContact .fromContact {
+    inline-size: -webkit-max-content;
+    inline-size: -moz-max-content;
+    inline-size: max-content;
+  }
 }/*# sourceMappingURL=style.css.map */
