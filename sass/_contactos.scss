@@ -4,15 +4,65 @@
     padding: 40px 90px 20px;
     background-color: rgb(0 0 0 / 15%);
     box-shadow: 0px 3px 18px rgb(146, 146, 146);
+    .titleVisitanos{
+        color: var(--red-color);
+    }
+}
+.col-12{
+    .btn{
+        width: 200px;
+        background: var(--red-color);
+        border: var(--red-color);
+    }
+}
+.sectionContact-2{
+    max-width: 1200px;
+    justify-self: center;
+    .wrapperVisitanos{
+        max-width: 400px;
+        margin-bottom: 2em;
+        margin: 30px 0;
+        padding: 40px 20px 20px;
+        background-color: rgb(0 0 0 / 15%);
+
+        .titleVisitanos{
+            margin-bottom: 1.5em;
+            padding-bottom: 1em;
+            color: var(--red-color);
+        }
+        .wrapVisitanos{
+            display: flex;  
+            text-align: start;
+            margin-bottom: 1em;
+            
+            .wrapperVisitanos-info{
+                margin-left: 1.5em;
+            }
+        }
+    } 
+    .wrapperMaps{
+        margin: 30px;
+        align-self: center;
+    }   
 }
 
 @media (min-width: 480px){
 
     .sectionContact{
         max-width: 1200px;
-        margin: 100px 50px;
+        margin: 50px 50px;
         .fromContact{
             inline-size: max-content;
         }
     }
+    .sectionContact-2{
+        margin: 50px 50px 0;
+        display: flex;  
+        justify-content: space-between;
+        justify-self: auto;
+        .wrapperVisitanos{
+            justify-content: start;
+        }
+    }
 }
+

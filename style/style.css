@@ -163,6 +163,9 @@ body .footer .footer-icons img {
   padding: 10px;
 }
 
+.section-compra {
+  max-width: 1500px;
+}
 .section-compra .subtitle-compra {
   margin-bottom: 2em;
 }
@@ -390,15 +393,100 @@ aside .wrapper-filter .wrapper-combustible form input {
   background-color: rgba(0, 0, 0, 0.15);
   box-shadow: 0px 3px 18px rgb(146, 146, 146);
 }
+.sectionContact .titleVisitanos {
+  color: var(--red-color);
+}
+
+.col-12 .btn {
+  width: 200px;
+  background: var(--red-color);
+  border: var(--red-color);
+}
+
+.sectionContact-2 {
+  max-width: 1200px;
+  justify-self: center;
+}
+.sectionContact-2 .wrapperVisitanos {
+  max-width: 400px;
+  margin-bottom: 2em;
+  margin: 30px 0;
+  padding: 40px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.sectionContact-2 .wrapperVisitanos .titleVisitanos {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  color: var(--red-color);
+}
+.sectionContact-2 .wrapperVisitanos .wrapVisitanos {
+  display: flex;
+  text-align: start;
+  margin-bottom: 1em;
+}
+.sectionContact-2 .wrapperVisitanos .wrapVisitanos .wrapperVisitanos-info {
+  margin-left: 1.5em;
+}
+.sectionContact-2 .wrapperMaps {
+  margin: 30px;
+  align-self: center;
+}
 
 @media (min-width: 480px) {
   .sectionContact {
     max-width: 1200px;
-    margin: 100px 50px;
+    margin: 50px 50px;
   }
   .sectionContact .fromContact {
     inline-size: -webkit-max-content;
     inline-size: -moz-max-content;
     inline-size: max-content;
+  }
+  .sectionContact-2 {
+    margin: 50px 50px 0;
+    display: flex;
+    justify-content: space-between;
+    justify-self: auto;
+  }
+  .sectionContact-2 .wrapperVisitanos {
+    justify-content: start;
+  }
+}
+.containerNosotros {
+  max-width: 1200px;
+}
+.containerNosotros .wrapperNosotros .wrapNosotros {
+  margin: 25px 50px;
+}
+.containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 0 20px;
+}
+.containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .titleWrapNosotros {
+  font-size: large;
+  justify-self: start;
+  padding-bottom: 1em;
+}
+.containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosInfo-parrafo {
+  font-weight: bold;
+}
+.containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosInfo-parrafo-2, .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosInfo-parrafo {
+  text-align: start;
+  padding-bottom: 0.5em;
+}
+.containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosList {
+  text-align: start;
+  margin-left: 1em;
+}
+.containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosList ul li {
+  list-style-type: disclosure-closed;
+}
+.containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosList ::marker {
+  color: var(--red-color);
+}
+@media (min-width: 480px) {
+  .containerNosotros .wrapperNosotros .wrapNosotros {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
