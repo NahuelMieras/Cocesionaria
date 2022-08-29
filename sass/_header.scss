@@ -36,6 +36,10 @@
             color: var(--primary-color);
             margin-left: 1fr;
             padding: 10px;
+            :link{
+                background: var(--red-color);
+                color: var(--primary-color);
+            }
         }
         
     }

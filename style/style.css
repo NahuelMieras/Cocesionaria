@@ -22,7 +22,7 @@ body {
   min-height: 100%;
 }
 body main {
-  background: url(../publicaciones/imagen\ de\ portada.jpg) no-repeat center;
+  background: url(../Imagenes/imagen\ de\ portada.jpg) no-repeat center;
   background-size: cover;
   position: relative;
   height: 350px;
@@ -161,6 +161,10 @@ body .footer .footer-icons img {
   color: var(--primary-color);
   margin-left: 1fr;
   padding: 10px;
+}
+.header .menu-bar a :link {
+  background: var(--red-color);
+  color: var(--primary-color);
 }
 
 .section-compra {
@@ -452,11 +456,17 @@ aside .wrapper-filter .wrapper-combustible form input {
     justify-content: start;
   }
 }
+.title-main {
+  font-size: 40px;
+}
+
 .containerNosotros {
   max-width: 1200px;
+  justify-self: center;
 }
 .containerNosotros .wrapperNosotros .wrapNosotros {
-  margin: 25px 50px;
+  padding: 25px 50px;
+  border-bottom: 1px solid rgb(194, 194, 194);
 }
 .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo {
   display: grid;
@@ -472,8 +482,8 @@ aside .wrapper-filter .wrapper-combustible form input {
   font-weight: bold;
 }
 .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosInfo-parrafo-2, .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosInfo-parrafo {
-  text-align: start;
   padding-bottom: 0.5em;
+  text-align: justify;
 }
 .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosList {
   text-align: start;
@@ -485,8 +495,22 @@ aside .wrapper-filter .wrapper-combustible form input {
 .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosList ::marker {
   color: var(--red-color);
 }
-@media (min-width: 480px) {
+.containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosImg {
+  padding: 1em;
+}
+
+@media (min-width: 1000px) {
+  .containerNosotros .wrapperNosotros {
+    max-width: 1103px;
+  }
   .containerNosotros .wrapperNosotros .wrapNosotros {
     display: flex;
+    margin: 25px 0px;
+  }
+  .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosImg {
+    padding: 0;
+  }
+  .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosImg img {
+    width: 500px;
   }
 }/*# sourceMappingURL=style.css.map */
