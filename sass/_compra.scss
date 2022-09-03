@@ -7,8 +7,6 @@ aside {
     }
 
     .wrapper-compra {
-        max-width: 1500px;
-        justify-self: center;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
