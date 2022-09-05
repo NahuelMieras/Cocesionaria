@@ -51,6 +51,9 @@ body a {
 body section {
   margin: 1em 2em;
 }
+body h2 {
+  letter-spacing: 2px;
+}
 body .footer {
   margin-top: 3em;
   padding: 2em;
