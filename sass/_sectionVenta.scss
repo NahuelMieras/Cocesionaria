@@ -6,7 +6,7 @@
     .cards {
         display: grid;
         grid-template-columns: auto;
-        justify-content: center;
+        justify-content: space-evenly;
 
         .card {
             width: 300px;
@@ -54,29 +54,31 @@
     }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1070px) {
     .section-venta {
 
         .cards {
             display: flex;
 
             .card {
-                max-width: 300px;
-                margin: 25px;
+                max-width: 350px;
+                margin: 20px;
                 padding: 40px 20px;
+                display: grid;
 
                 .card-title {
                     margin-bottom: 15px;
                 }
 
                 .card-subtitle {
-                    margin-bottom: 10px;
+                    font-size: 20px;
                 }
 
                 .card-btn {
                     display: inline-block;
-                    margin-top: 20px;
+                    margin-top: 0;
                     padding: 10px 20px;
+                    align-self: center;
                 }
             }
         }

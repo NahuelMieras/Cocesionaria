@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
     <title>AutomotoresMG</title>
     <meta name="description" content="Te ofrecemos la rapidez, garantía y comodidad que necesitas en la compra de tu próximo auto usado, contamos con un gran catálogo de vehículos y servicios.">
@@ -21,17 +22,38 @@
 </head>
 <body class="grid-container">
     <header class="header">
-        <div class="logo-header">
-            <a href="index.html"> <img src="./Imagenes/logo patente solo.png" height="50px" alt="logo de la empresa"></a>
-        </div>
-        <nav>
-            <ul class="menu-bar">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./section/comprar.html">Comprar</a></li>
-                <li><a href="./section/nosotros.html">nosotros</a></li>
-                <li><a href="./section/contactos.html">contacto</a></li>
-                <li><a href="./section/iniciarsesion.html">Iniciar Sesion</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <div class="logo-header">
+                    <a href="index.html"> <img src="./Imagenes/logo patente solo.png" height="50px"
+                            alt="logo de la empresa"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./section/comprar.html">COMPRAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./section/contactos.html">CONTACTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./section/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./section/iniciarsesion.html">INICIAR
+                                SESION</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -40,200 +62,202 @@
             <h1 class="title-main">COMPRA Y VENTA DE AUTOS NUEVOS Y USADOS</h1>
         </div>
     </main>
-
+    <h2 class="title-compra">Compra tu auto</h2>
     <section>
         <div class="section-compra">
-         <h2 class="subtitle-compra">Compra tu auto</h2>
+            <div class="subtitle-compra">
+                <h4>Autos usados en venta</h4>
+            </div>
             <div class="container-compra-publicaciones">
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/1637160178671.webp" height="80px" alt="auto gol trend"></div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Volkswagen Gol Trend Pack III | 2020</p>
-                            <p>150.000 km</p>
+                    <div class="img-pub"><img src="./Imagenes/1637160178671.webp" width="80px" alt="auto gol trend"></div>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Volkswagen Gol Trend Pack III</p>
+                            <p class="car-details">150.000 km | 2020</p>
                         </div>
-                        <div class="parrafo-pub">
-                            <p>$1.590.000</p>
+                        <div class="car-price">
+                            <p>$2.590.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/2015-Audi-Q7-2.jpg" height="80px" alt="auto audi q7"></div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Audi Q7 | 2015</p>
-                            <P>180.000 km</P>
+                    <div class="img-pub"><img src="./Imagenes/2015-Audi-Q7-2.jpg" width="80px" alt="auto audi q7"></div>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Audi Q7</p>
+                            <P class="car-details">180.000 km | 2015</P>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$3.250.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
                     <div class="img-pub"><img src="./Imagenes/VOLKSWAGEN-GOL-2023-BRASIL-01.jpg"
-                            height="80px" alt="auto-volkswagen gol trend"></div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Volkswagen Gol Trend | 2023</p>
-                            <p>0 km</p>
+                        width="80px" alt="auto-volkswagen gol trend"></div>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Volkswagen Gol Trend</p>
+                            <p class="car-details">0 km | 2023</p>
                         </div>
-                        <div class="parrafo-pub">
-                            <p>$2.180.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/Chevrolet-Classic-2016-2.jpg" height="80px" alt="auto chrevrolet corsa classic">
-                    </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Chevrolet Corsa Classic | 2016 </p>
-                            <p>250.000 km</p>
-                        </div>
-                        <div class="parrafo-pub">
-                            <p>$790.000</p>
+                        <div class="car-price">
+                            <p>$3.180.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/clio-mio.jpg" height="80px" alt="auto renault clio mio">
+                    <div class="img-pub"><img src="./Imagenes/Chevrolet-Classic-2016-2.jpg" width="80px" alt="auto chrevrolet corsa classic">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Renault Clio Mio | 2017 </p>
-                            <p>270.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Chevrolet Corsa Classic</p>
+                            <p class="car-details">250.000 km | 2016 </p>
                         </div>
-                        <div class="parrafo-pub">
-                            <p>$850.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/Fiat-Palio-2015.jpg" height="80px" alt="auto fiat palio">
-                    </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Fiat Palio Active | 2015</p>
-                            <p>200.000 km</p>
-                        </div>
-                        <div class="parrafo-pub">
-                            <p>$750.000</p>
+                        <div class="car-price">
+                            <p>$1.790.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/Chevrolet-Onix.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/clio-mio.jpg" width="80px" alt="auto renault clio mio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Chevrolet Onix | 2018</p>
-                            <p>170.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Renault Clio Mio</p>
+                            <p class="car-details">270.000 km | 2017 </p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
+                            <p>$2.150.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub">
+                    <div class="img-pub"><img src="./Imagenes/Fiat-Palio-2015.jpg" width="80px" alt="auto fiat palio">
+                    </div>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Fiat Palio Active</p>
+                            <p class="car-details">200.000 km | 2015</p>
+                        </div>
+                        <div class="car-price">
+                            <p>$1.950.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub">
+                    <div class="img-pub"><img src="./Imagenes/Chevrolet-Onix.jpg" width="80px" alt="auto fiat palio">
+                    </div>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Chevrolet Onix</p>
+                            <p class="car-details">170.000 km | 2018</p>
+                        </div>
+                        <div class="car-price">
                             <p>$2.380.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/hilux-azul.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/hilux-azul.jpg" width="80px" alt="auto fiat palio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Toyota Hilux SRV 4X4 Caja Automatica | 2021</p>
-                            <p>25.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Toyota Hilux SRV 4X4 Caja Automatica</p>
+                            <p class="car-details">25.000 km | 2021</p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$5.890.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/KIA_2012_Quoris.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/KIA_2012_Quoris.jpg" width="80px" alt="auto fiat palio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Kia Quoris | 2012</p>
-                            <p>238.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Kia Quoris</p>
+                            <p class="car-details">238.000 km | 2012</p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$1.850.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/KIA_KX3_Red_Metallic.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/KIA_KX3_Red_Metallic.jpg" width="80px" alt="auto fiat palio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Kia KX3 | 2018</p>
-                            <p>85.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Kia KX3</p>
+                            <p class="car-details">85.000 km | 2018</p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$2.970.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/KIA_Rio_(FB)_2020_Red.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/KIA_Rio_(FB)_2020_Red.jpg" width="80px" alt="auto fiat palio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Kia Rio | 2020</p>
-                            <p>50.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Kia Rio</p>
+                            <p class="car-details">50.000 km | 2020</p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$3.420.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/KIA_Rio_Light.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/KIA_Rio_Light.jpg" width="80px" alt="auto fiat palio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Kia Rio | 2021</p>
-                            <p>38.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Kia Rio</p>
+                            <p class="car-details">38.000 km | 2021</p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$370.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/Toyota_2018_Yaris.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/Toyota_2018_Yaris.jpg" width="80px" alt="auto fiat palio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Toyota Yaris | 2018</p>
-                            <p>90.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Toyota Yaris</p>
+                            <p class="car-details">90.000 km | 2018</p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$4.230.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/Toyota_Camry_Red.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/Toyota_Camry_Red.jpg" width="80px" alt="auto fiat palio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Toyota Camry | 2020</p>
-                            <p>40.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Toyota Camry</p>
+                            <p class="car-details">40.000 km | 2020</p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$4.950.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="pub">
-                    <div class="img-pub"><img src="./Imagenes/VW-Cross-up-delantera.jpg" height="80px" alt="auto fiat palio">
+                    <div class="img-pub"><img src="./Imagenes/VW-Cross-up-delantera.jpg" width="80px" alt="auto fiat palio">
                     </div>
-                    <div class="parrafo-grid">
-                        <div class="parrafo-pub">
-                            <p>Volkswagen Cross UP | 2017</p>
-                            <p>120.000 km</p>
+                    <div class="car-content">
+                        <div class="car-text">
+                            <p>Volkswagen Cross UP</p>
+                            <p class="car-details">120.000 km | 2017</p>
                         </div>
-                        <div class="parrafo-pub">
+                        <div class="car-price">
                             <p>$2.700.000</p>
                         </div>
                     </div>
@@ -242,8 +266,9 @@
         </div>
     </section>
 
+    <h2 class="subtitle-venta">Vende tu auto</h2>
+
     <section class="section-venta">
-        <h2 class="subtitle-venta">Vende tu auto</h2>
         <div class="cards">
             <div class="card">
                 <div class="card-title">
@@ -302,6 +327,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
 </body>
 
 </html>

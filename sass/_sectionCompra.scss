@@ -1,27 +1,149 @@
-.section-compra{
+section{
+    width: 100%;
+}
+.section-compra {
     .subtitle-compra{
-        margin-bottom: 2em;
-    }
-    .pub{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        margin-bottom: 3em;
-        padding-bottom: 3em;
-        align-items: center;
+        text-align: start;
+        margin-bottom:3em; ; 
+        padding: 0 0 1em 1.5em;   
         border-bottom: 1px solid rgb(199, 199, 199);
+    }
+    .container-compra-publicaciones {
 
-        .img-pub{
-            margin-right: 1em;
-        }
-        .parrafo-grid{
-            display: grid;
-            grid-template-rows: 70% 30%;
 
-            .parrafo-pub{
-                text-align: start;
-                padding-bottom: 1em;
-                color: rgb(41, 41, 41);
+        .pub {
+            display: flex;
+            margin-bottom: 3em;
+            padding-bottom: 3em;
+            align-items: center;
+            border-bottom: 1px solid rgb(199, 199, 199);
+
+            .img-pub {
+                align-items: center;
+                margin: 1.5em;
+
+                img {
+                    width: 120px;
+                }
+            }
+
+            .car-content {
+                display: grid;
+                grid-template-rows: 70% 30%;
+
+                .car-text {
+                    text-align: start;
+                    padding-bottom: 1em;
+                    letter-spacing: 0.1em;
+                    color: rgb(41, 41, 41);
+                }
+
+                .car-details {
+                    font-family: 'Red Hat Display', sans-serif;
+                    font-weight: bolder;
+                }
+
+                .car-price {
+                    font-family: "Oswald", serif;
+                    font-weight: bold;
+                    font-size: large;
+                    letter-spacing: 4px;
+                    width: 170px;
+
+                    p {
+                        margin: 0;
+                        color: var(--red-color);
+                        border: 1px solid;
+                        border-radius: 5px;
+                        box-shadow: 0 1px 3px var(--red-color);
+                    }
+                }
             }
         }
-    } 
+    }
+}
+
+@media (min-width: 768px){
+    .section-compra{
+        .subtitle-compra{
+            text-align: center;
+            padding:0 0 1em 0;
+        }
+        .container-compra-publicaciones{
+        
+
+        .pub{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            margin-bottom: 3em;
+            padding-bottom: 3em;
+            align-items: center;
+    
+            .img-pub{
+                margin: 1em;
+                padding: 0 2em;
+                
+            }
+            .car-content{
+                margin-left: 2em;
+    
+                .car-text{
+                    font-weight: 700;
+                }
+                
+            }
+        } 
+    }
+}
+}
+
+@media (min-width: 992px){
+    body{
+        section{
+            max-width: auto;
+        }
+    }
+    .section-compra{
+        .subtitle-compra{
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .container-compra-publicaciones{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(295px,295px));
+            grid-column-gap: 34px;
+            grid-row-gap: 34px;
+            justify-content: center;
+            margin: 0 0 55px;
+        .pub{
+            grid-template-columns: auto;
+            padding: 0;
+            margin: 0;
+            
+            .img-pub{
+                margin: 0;
+                padding: 0;
+                img{
+                    width: 200px;
+                }
+            }
+            .car-content{
+
+    
+                .car-text{
+
+                }
+                .car-details{
+
+                }
+                .car-price{
+                    justify-self: center;
+                }
+                
+            }
+        } 
+    }
+}
+
 }
