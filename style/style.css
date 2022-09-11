@@ -110,8 +110,7 @@ body .footer .footer-container .footer-position .footer-socialmedia img {
   body section {
     justify-self: center;
   }
-  body .subtitle-venta:hover,
-body .subtitle-compra:hover {
+  body .subtitle-venta:hover {
     cursor: pointer;
     color: rgb(192, 0, 0);
   }
@@ -245,7 +244,7 @@ section {
   }
   .section-compra .container-compra-publicaciones .pub {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 30% 70%;
     margin-bottom: 3em;
     padding-bottom: 3em;
     align-items: center;
@@ -383,7 +382,6 @@ aside {
   }
   aside {
     margin: 1em;
-    margin-right: 5em;
     padding-top: 1em;
   }
   aside .wrapper-filter {
@@ -406,6 +404,12 @@ aside .wrapper-filter .wrapper-combustible .checkbox-wrapper-title {
     margin-bottom: 0.5em;
     font-size: large;
   }
+  aside .wrapper-filter .wrapper-marca .checkbox-wrapper-title .checkbox-title,
+aside .wrapper-filter .wrapper-año .checkbox-wrapper-title .checkbox-title,
+aside .wrapper-filter .wrapper-combustible .checkbox-wrapper-title .checkbox-title {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
   aside .wrapper-filter .wrapper-marca form,
 aside .wrapper-filter .wrapper-año form,
 aside .wrapper-filter .wrapper-combustible form {
@@ -418,28 +422,33 @@ aside .wrapper-filter .wrapper-combustible form input {
     margin-right: 0.5em;
   }
 }
+@media (min-width: 992px) {
+  aside {
+    margin: 1em 2em 0 3em;
+  }
+}
 .wrapper-login {
   margin: 30px 0 50px;
 }
 .wrapper-login .login {
   justify-content: center;
-  width: 500px;
+  width: 300px;
   margin: 15px auto 0;
 }
 .wrapper-login .login .login--loginWith {
-  padding: 30px 0;
+  padding: 10px 0;
   border-bottom: 1px solid rgb(194, 194, 194);
 }
 .wrapper-login .login .login--loginWith .login--loginWith--google, .wrapper-login .login .login--loginWith .login--loginWith--facebook {
   display: flex;
   background: white;
-  margin: 1em;
+  margin: 0.5em;
   padding: 0.5em;
   justify-content: center;
   align-items: center;
   border: 2px solid black;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bolder;
 }
 .wrapper-login .login .login--loginWith .login--loginWith--google .btn--google, .wrapper-login .login .login--loginWith .login--loginWith--facebook .btn--google, .wrapper-login .login .login--loginWith .login--loginWith--facebook .btn--facebook {
@@ -452,19 +461,19 @@ aside .wrapper-filter .wrapper-combustible form input {
 }
 .wrapper-login .login .mb-2 {
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 .wrapper-login .login .mb-2 .col-sm-3 {
   width: 70%;
 }
 .wrapper-login .login .btn--iniciarSesion {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .wrapper-login .login .btn--iniciarSesion .btn {
-  width: 460px;
+  width: 270px;
   margin: 1em;
   padding: 0.5em;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bolder;
   background-color: var(--red-color);
   border: 0.3px solid black;
@@ -488,6 +497,63 @@ aside .wrapper-filter .wrapper-combustible form input {
   color: var(--red-color);
 }
 
+@media (min-width: 768px) {
+  .wrapper-login {
+    margin: 30px 0 50px;
+  }
+  .wrapper-login .login {
+    width: 500px;
+  }
+  .wrapper-login .login .login--loginWith {
+    padding: 30px 0;
+  }
+  .wrapper-login .login .login--loginWith .login--loginWith--google, .wrapper-login .login .login--loginWith .login--loginWith--facebook {
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 20px;
+  }
+  .wrapper-login .login .login--loginWith .login--loginWith--facebook {
+    background-color: #3b5998;
+    color: var(--primary-color);
+  }
+  .wrapper-login .login .mb-2 {
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .wrapper-login .login .mb-2 .col-sm-3 {
+    width: 70%;
+  }
+  .wrapper-login .login .btn--iniciarSesion {
+    padding: 15px 0;
+  }
+  .wrapper-login .login .btn--iniciarSesion .btn {
+    width: 460px;
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: var(--red-color);
+    border: 0.3px solid black;
+    border-radius: 10px;
+  }
+  .wrapper-login .login .forgotenPassword {
+    margin-bottom: 15px;
+  }
+  .wrapper-login .login .forgotenPassword a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+  }
+  .wrapper-login .login .registerWrap {
+    padding-top: 15px;
+    border-top: 1px solid rgb(194, 194, 194);
+    font-size: large;
+  }
+  .wrapper-login .login .registerWrap .register--link {
+    text-decoration: none;
+    color: var(--red-color);
+  }
+}
 .sectionContact {
   margin: 30px;
   padding: 40px 90px 20px;
@@ -504,8 +570,11 @@ aside .wrapper-filter .wrapper-combustible form input {
   border: var(--red-color);
 }
 
+.sectionContact-2 {
+  text-align: -webkit-center;
+}
 .sectionContact-2 .wrapperVisitanos {
-  max-width: 600px;
+  max-width: 400px;
   margin: 30px;
   background-color: rgba(0, 0, 0, 0.15);
 }
@@ -526,6 +595,9 @@ aside .wrapper-filter .wrapper-combustible form input {
   margin: 30px;
   align-self: center;
 }
+.sectionContact-2 .wrapperMaps .map-l {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .sectionContact {
@@ -540,13 +612,29 @@ aside .wrapper-filter .wrapper-combustible form input {
   .sectionContact-2 {
     margin: 50px 50px 0;
     display: flex;
+    justify-content: space-evenly;
   }
   .sectionContact-2 .wrapperVisitanos {
     justify-content: start;
-    max-width: 400px;
+    max-width: 600px;
     margin: 30px 0;
     padding: 40px 20px 20px;
   }
+}
+@media (min-width: 992px) {
+  .sectionContact-2 .wrapperMaps {
+    margin: 30px;
+    align-self: center;
+  }
+  .sectionContact-2 .wrapperMaps .map-l {
+    display: block;
+  }
+  .sectionContact-2 .wrapperMaps .map-s {
+    display: none;
+  }
+}
+.containerNosotros {
+  text-align: -webkit-center;
 }
 .containerNosotros .wrapperNosotros .wrapNosotros {
   padding: 25px 50px;
@@ -572,6 +660,7 @@ aside .wrapper-filter .wrapper-combustible form input {
 .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosList {
   text-align: start;
   margin-left: 1em;
+  transform: translateX(-6%);
 }
 .containerNosotros .wrapperNosotros .wrapNosotros .wrapNosotrosInfo .wrapNosotrosList ul li {
   list-style-type: disclosure-closed;

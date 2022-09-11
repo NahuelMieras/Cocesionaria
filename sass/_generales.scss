@@ -130,15 +130,12 @@ body {
           }
         }
       }
-
-
     }
     section{
       justify-self: center;
     }
 
-    .subtitle-venta:hover,
-    .subtitle-compra:hover {
+    .subtitle-venta:hover{
       cursor: pointer;
       color: rgb(192, 0, 0);
     }

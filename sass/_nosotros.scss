@@ -1,5 +1,5 @@
 .containerNosotros {
-
+    text-align: -webkit-center;
     .wrapperNosotros {
 
         .wrapNosotros {
@@ -26,6 +26,7 @@
                 .wrapNosotrosList{
                     text-align: start;
                     margin-left: 1em;
+                    transform: translateX(-6%);
                     ul li{
                         list-style-type: disclosure-closed;                        
                     }
@@ -48,19 +49,12 @@
 @media (min-width: 768px){
     .containerNosotros {
 
+
         .wrapperNosotros {
             max-width: 1103px;
             .wrapNosotros {
                 display: flex;
                 margin: 25px 0px ;
-
-                .wrapNosotrosInfo {
-                    .titleWrapNosotros {}
-    
-                    .wrapNosotrosInfo-parrafo {}
-    
-                    .wrapNosotrosInfo-parrafo-2 {}
-                }
     
                 .wrapNosotrosImg {
                     padding: 0;

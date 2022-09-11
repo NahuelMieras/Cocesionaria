@@ -15,8 +15,9 @@
     }
 }
 .sectionContact-2{
+    text-align: -webkit-center;
     .wrapperVisitanos{
-        max-width: 600px;
+        max-width: 400px;
         margin: 30px;
 
         background-color: rgb(0 0 0 / 15%);
@@ -39,6 +40,9 @@
     .wrapperMaps{
         margin: 30px;
         align-self: center;
+        .map-l{
+            display: none;
+        }
     }   
 }
 
@@ -54,12 +58,30 @@
     .sectionContact-2{
         margin: 50px 50px 0;
         display: flex;  
+        justify-content: space-evenly;
         .wrapperVisitanos{
             justify-content: start;
-            max-width: 400px;
+            max-width: 600px;
             margin: 30px 0;
             padding: 40px 20px 20px;
         }
     }
+    
 }
+
+@media (min-width: 992px){
+    .sectionContact-2{
+        .wrapperMaps{
+            margin: 30px;
+            align-self: center;
+            .map-l{
+                display: block;
+            }
+            .map-s{
+                display: none;
+            }
+        } 
+    }
+}
+
 
